@@ -656,6 +656,7 @@ main .main_desktop #contenido_experiencia {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 
 main .main_desktop .contenido_texto_class_expe {
@@ -664,7 +665,7 @@ main .main_desktop .contenido_texto_class_expe {
 }
 
 main .main_desktop #info_experiencia {
-    margin-top: 10px;
+    margin-top: 15px;
     color: #999696;
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
@@ -681,7 +682,6 @@ main .main_desktop .container_tecno {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
     margin-left: 30px;
 }
 
@@ -698,8 +698,8 @@ main .main_desktop .column {
 
 
 main .main_desktop .column img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     padding: 30px;
     margin-bottom: 0px;
 }
@@ -755,8 +755,8 @@ main .main_desktop .fila {
 }
 
 main .main_desktop .fila img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     padding: 10px;
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -769,7 +769,7 @@ main .main_desktop .fila a {
     padding-right: 10px; /* Ajusta el espaciado interno de los enlaces */
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -781,7 +781,7 @@ main .main_desktop .borde_contacto_linkedin {
     position: absolute;
     top: 30px;
     left: 40px;
-    width: 210px;
+    width: 190px;
     height: 80px;
     border: 8px solid #5cc3e7;
     border-radius: 10px;
@@ -797,7 +797,7 @@ main .main_desktop .borde_contacto_telefono {
     position: absolute;
     top: 30px;
     left: 40px;
-    width: 230px;
+    width: 210px;
     height: 80px;
     border: 8px solid #5cc3e7;
     border-radius: 10px;
@@ -813,7 +813,7 @@ main .main_desktop .borde_contacto_correo {
     position: absolute;
     top: 30px;
     left: 40px;
-    width: 410px;
+    width: 370px;
     height: 80px;
     border: 8px solid #5cc3e7;
     border-radius: 10px;
@@ -833,7 +833,7 @@ footer {
     color: #fff;
     text-align: center;
     padding-bottom: 40px;
-    margin-top: 160px;
+    margin-top: 130px;
 }
 
 
