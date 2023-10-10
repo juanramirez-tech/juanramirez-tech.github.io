@@ -1,0 +1,1600 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #101630;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.collapsed {
+    display: none;
+}
+
+nav{
+    position: fixed;
+    background-color: #101630;
+    color: white;
+    width: 100%;
+    height: 80px;
+    padding-bottom: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Asegura que la barra de navegación esté por encima de otros elementos */
+    
+}
+
+nav .logo img {
+    height: 60px;
+    padding-top: 25px;
+}
+
+nav .mobile{
+    display: none;
+}
+
+nav .mobile .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav .mobile .header .more button {
+    width: 80px;
+    height: 80px;
+    border: none;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    padding-left: 0px;
+    padding-right: 20px;
+    background-color: #687FCB; 
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 16px;
+    margin-right: 30px; 
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+  
+.primary a:last-child {
+    color: #fff;
+    font-weight: bold;
+    background: linear-gradient(to right, #5cc3e7, #5817c8);
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+  
+nav a:hover {
+    color: #5cc3e7;
+}
+  
+  
+nav .desktop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+nav .desktop .primary{
+    display: flex;
+}
+
+/*-----------------MAIN------------------*/
+
+main .main_mobile {
+    display: none;
+}
+
+main .main_desktop{
+    background: #101630;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: 150px;
+}
+
+main .main_desktop h2{
+    color: #999696;
+    margin-top: 40px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+}
+
+main .main_desktop h1{
+    color: #fff;
+    font-family: 'Chonburi', cursive;
+    font-size: 60px;
+}
+
+main .main_desktop .primary_2{
+    margin-top: 25px;
+}
+
+main .main_desktop .primary_2 a:last-child {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    background: linear-gradient(to right, #5cc3e7, #5817c8);
+    border-radius: 10px;
+    padding: 10px 40px; 
+}
+
+main .main_desktop .contenedor {
+    position: relative;
+    width: 250px; /* Ancho del contenedor ajustable */
+    height: 280px; /* Alto del contenedor ajustable */
+    margin-top: 100px;
+    margin-left: 0px;
+}
+
+main .main_desktop .imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -ms-border-radius: 10px ;
+    -o-border-radius: 10px ;
+}
+
+main .main_desktop .imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+main .main_desktop .borde {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 225px;
+    height: 260px;
+    border: 8px solid #5cc3e7;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 20px rgba(92, 195, 231, 0.5); 
+}
+
+main .main_desktop .contenido {
+    margin-left: 320px; /* Ajusta el margen izquierdo para que el contenido esté al lado del contenedor */
+    margin-top: -280px;
+    padding: 0px; /* Añade espacio alrededor del contenido */
+}
+
+main .main_desktop .contenido .titulo-contenido {
+    margin-top: 0; 
+    color: white;
+    margin-top: 40px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    text-shadow: 4px 4px 6px rgba(92, 195, 231, 0.5); /* Ajusta los valores según tus preferencias */
+}
+
+main .main_desktop .contenido .p-contenido {
+    margin-top: 0; 
+    color: #999696;
+    margin-top: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    font-weight: bold; 
+}
+
+
+main .main_desktop .contenido .subtitulo-contenido {
+    margin-top: 0; 
+    color: white;
+    margin-top: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+}
+
+main .main_desktop .contenido .p-estudios {
+    margin-top: 0; 
+    color: #999696;
+    margin-top: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    font-weight: bold; 
+}
+
+main .main_desktop .contenido .p-estudios_institucion {
+    margin-top: 0; 
+    color: #999696;
+    margin-top: 0px;
+    margin-left: 18px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+}
+
+main .main_desktop .contenido_portafolio {
+    position: relative;
+    margin-top: 100px;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+main .main_desktop .contenido_portafolio .titulo-portafolio {
+    margin-top: 0; 
+    color: white;
+    margin-top: 40px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 4px 4px 6px rgba(92, 195, 231, 0.5); /* Ajusta los valores según tus preferencias */
+}
+
+
+/* Estilos de la app 1 */
+
+main .main_desktop #contenido_app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+main .main_desktop #proyecto_app_1 {
+    margin-top: 0;
+    color: #5cc3e7;
+    margin-top: 20px;
+    font-family: 'Chonburi', cursive;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+main .main_desktop #name_app_1 {
+    margin-top: 0;
+    color: white;
+    margin-top: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+}
+
+main .main_desktop #info_app_1 {
+    margin-top: 10px;
+    color: #999696;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+main .main_desktop #ver_mas_app_1 {
+    margin-top: 10px;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    text-decoration: dotted;
+}
+
+main .main_desktop .contenido_texto_class {
+    max-width: 500px;
+    text-align: left; 
+}
+
+main .main_desktop .contenedor_app {
+    display: flex; 
+    align-items: center;
+}
+
+main .main_desktop .contenedor_app_1 {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    margin-left: 50px;
+}
+
+main .main_desktop .imagen_app_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -ms-border-radius: 10px ;
+    -o-border-radius: 10px ;
+}
+
+main .main_desktop .imagen_app_1 img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover; 
+}
+
+main .main_desktop .borde_app_1 {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 280px;
+    height: 190px;
+    border: 8px solid #5cc3e7;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 20px rgba(92, 195, 231, 0.5); 
+}
+
+/* Estilos de la web 1 */
+
+main .main_desktop #contenido_web {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+main .main_desktop #proyecto_web_1 {
+    margin-top: 0;
+    color: #5cc3e7;
+    margin-top: 20px;
+    font-family: 'Chonburi', cursive;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+main .main_desktop #name_web_1 {
+    margin-top: 0;
+    color: white;
+    margin-top: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+}
+
+main .main_desktop #info_web_1 {
+    margin-top: 10px;
+    color: #999696;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+main .main_desktop #ver_mas_web_1 {
+    margin-top: 10px;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    text-decoration: dotted;
+}
+
+main .main_desktop .contenido_texto_class {
+    max-width: 500px;
+    text-align: left; 
+}
+
+main .main_desktop .contenedor_web {
+    display: flex; 
+    align-items: center;
+}
+
+main .main_desktop .contenedor_web_1 {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    margin-left: 50px;
+}
+
+main .main_desktop .imagen_web_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -ms-border-radius: 10px ;
+    -o-border-radius: 10px ;
+}
+
+main .main_desktop .imagen_web_1 img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover; 
+}
+
+main .main_desktop .borde_web_1 {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 280px;
+    height: 190px;
+    border: 8px solid #5cc3e7;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 20px rgba(92, 195, 231, 0.5); 
+}
+
+/* Estilos de desktop 1 */
+
+main .main_desktop #contenido_desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+main .main_desktop #proyecto_desktop_1 {
+    margin-top: 0;
+    color: #5cc3e7;
+    margin-top: 20px;
+    font-family: 'Chonburi', cursive;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+main .main_desktop #name_desktop_1 {
+    margin-top: 0;
+    color: white;
+    margin-top: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+}
+
+main .main_desktop #info_desktop_1 {
+    margin-top: 10px;
+    color: #999696;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+main .main_desktop #ver_mas_desktop_1 {
+    margin-top: 10px;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    text-decoration: dotted;
+}
+
+main .main_desktop .contenido_texto_class {
+    max-width: 500px;
+    text-align: left; 
+}
+
+main .main_desktop .contenedor_desktop {
+    display: flex; 
+    align-items: center;
+}
+
+main .main_desktop .contenedor_desktop_1 {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    margin-left: 50px;
+}
+
+main .main_desktop .imagen_desktop_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -ms-border-radius: 10px ;
+    -o-border-radius: 10px ;
+}
+
+main .main_desktop .imagen_desktop_1 img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover; 
+}
+
+main .main_desktop .borde_desktop_1 {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 280px;
+    height: 190px;
+    border: 8px solid #5cc3e7;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 20px rgba(92, 195, 231, 0.5); 
+}
+
+/* Estilos de la otros proyectos 1 */
+
+main .main_desktop #contenido_otros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+main .main_desktop #proyecto_otros_1 {
+    margin-top: 0;
+    color: #5cc3e7;
+    margin-top: 20px;
+    font-family: 'Chonburi', cursive;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+main .main_desktop #name_otros_1 {
+    margin-top: 0;
+    color: white;
+    margin-top: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+}
+
+main .main_desktop #info_otros_1 {
+    margin-top: 10px;
+    color: #999696;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+main .main_desktop #ver_mas_otros_1 {
+    margin-top: 10px;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    text-decoration: dotted;
+}
+
+main .main_desktop .contenido_texto_class {
+    max-width: 500px;
+    text-align: left; 
+}
+
+main .main_desktop .contenedor_otros {
+    display: flex; 
+    align-items: center;
+}
+
+main .main_desktop .contenedor_otros_1 {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    margin-left: 50px;
+}
+
+main .main_desktop .imagen_otros_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -ms-border-radius: 10px ;
+    -o-border-radius: 10px ;
+}
+
+main .main_desktop .imagen_otros_1 img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover; 
+}
+
+main .main_desktop .borde_otros_1 {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 280px;
+    height: 190px;
+    border: 8px solid #5cc3e7;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 20px rgba(92, 195, 231, 0.5); 
+}
+
+/* CONTENIDO DE EXPERIENCIA */
+
+main .main_desktop .contenido_experiencia {
+    position: relative;
+    margin-top: 100px;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+main .main_desktop .contenido_experiencia .titulo-experiencia {
+    margin-top: 0; 
+    color: white;
+    margin-top: 40px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 4px 4px 6px rgba(92, 195, 231, 0.5); /* Ajusta los valores según tus preferencias */
+}
+
+main .main_desktop #contenido_experiencia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main_desktop .contenido_texto_class_expe {
+    width: 100%;
+    text-align: left; 
+}
+
+main .main_desktop #info_experiencia {
+    margin-top: 10px;
+    color: #999696;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+main .main_desktop .contenedor_experiencia {
+    display: block; 
+    align-items: center;
+}
+
+main .main_desktop .container_tecno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+
+main .main_desktop .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+main .main_desktop .column {
+    text-align: center;
+}
+
+
+main .main_desktop .column img {
+    width: 60px;
+    height: 60px;
+    padding: 30px;
+    margin-bottom: 0px;
+}
+
+main .main_desktop .column p {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: -10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+main .main_desktop #Titulo_contacto {
+    color: white;
+    margin-top: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 80px;
+    text-shadow: 4px 4px 6px rgba(92, 195, 231, 0.5); /* Ajusta los valores según tus preferencias */
+}
+
+main .main_desktop #contenido_contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+main .main_desktop .contenedor_contacto {
+    display: flex; 
+    align-items: center;
+    flex-direction: row;
+    gap: 100px; /* Espacio entre filas */
+}
+
+main .main_desktop .fila {
+    background-color: #101630;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre imagen y enlace */
+    z-index: 2; /* Ajusta el z-index para estar por encima del borde */
+    position: relative; /* Agrega posición relativa */
+    padding: 10px; /* Espaciado interno para que la sombra se note */
+    box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+main .main_desktop .fila img {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+main .main_desktop .fila a {
+    padding-right: 10px; /* Ajusta el espaciado interno de los enlaces */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+main .main_desktop .contenedor_contacto_cards {
+    position: relative;
+}
+
+main .main_desktop .borde_contacto_linkedin {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 210px;
+    height: 80px;
+    border: 8px solid #5cc3e7;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 20px rgba(92, 195, 231, 0.5);
+    z-index: 1;
+}
+
+main .main_desktop .borde_contacto_telefono {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 230px;
+    height: 80px;
+    border: 8px solid #5cc3e7;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 20px rgba(92, 195, 231, 0.5);
+    z-index: 1;
+}
+
+main .main_desktop .borde_contacto_correo {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 410px;
+    height: 80px;
+    border: 8px solid #5cc3e7;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 20px rgba(92, 195, 231, 0.5);
+    z-index: 1;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 40px;
+    margin-top: 160px;
+}
+
+
+footer.contenido-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el texto de derechos de autor */
+h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #999696;
+    font-family: 'Roboto Mono', monospace;
+}
+
+footer .footer-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 769px) {
+
+    nav .desktop {
+        display: none;
+    } 
+
+    main .main_desktop {
+        display: none;
+    }
+
+    footer .footer-desktop {
+        display: none;
+    }
+
+    footer .footer-mobile {
+        display: block;
+    }
+
+    nav .mobile {
+        display: flex;
+        height: 70px;
+        padding-bottom: 0px;
+    }
+    
+    nav .logo-header {
+        width: 70%;
+    }
+    
+    nav .logo-header img {
+        padding: 15px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    nav .icon-menu {
+        width: 30%;
+        text-align: right;
+    }
+
+    nav .icon-menu img {
+        padding: 15px;
+        padding-right: 15px;
+        width: 50px;
+        height: 50px;
+    }
+
+
+    nav .menu_mobile.hidden {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -200px; 
+        width: 200px; 
+        height: 100%;
+        background-color: #151d43;
+        transition: right 0.3s ease-in-out;
+    }
+
+    /* Estilo para el menú desplegable visible */
+    nav .menu_mobile {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100%;
+        background-color: #131a38;
+        transition: right 0.3s ease-in-out;
+        -webkit-transition: right 0.3s ease-in-out;
+        -moz-transition: right 0.3s ease-in-out;
+        -ms-transition: right 0.3s ease-in-out;
+        -o-transition: right 0.3s ease-in-out;
+        text-align: center;
+}
+
+    /* Estilo para los enlaces dentro del menú */
+    nav .menu_mobile a {
+    display: block;
+    padding-top: 5px;
+    padding-left: 40px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    }
+
+    /* Estilo para el main */
+
+    main .main_mobile{
+        display: block;
+        background: #101630;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 50px;
+    }
+    
+    main .main_mobile h2{
+        color: #999696;
+        margin-top: 100px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 30px;
+    }
+    
+    main .main_mobile h1{
+        color: #fff;
+        font-family: 'Chonburi', cursive;
+        font-size: 30px;
+    }
+    
+    main .main_mobile .primary_2{
+        margin-top: 25px;
+    }
+    
+    main .main_mobile .primary_2 a:last-child {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        background: linear-gradient(to right, #5cc3e7, #5817c8);
+        border-radius: 10px;
+        padding: 10px 20px; 
+    }
+
+    main .main_mobile .contenido {
+        margin-top: 0px;
+    }
+
+    main .main_mobile .contenido .titulo-contenido {
+        color: white;
+        margin-top: 40px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 20px;
+        text-align: center;
+        text-shadow: 4px 4px 6px rgba(92, 195, 231, 0.5); /* Ajusta los valores según tus preferencias */
+    }
+
+    main .main_mobile .contenedor {
+        position: relative;
+        width: 200px; /* Ancho del contenedor ajustable */
+        height: 230px; /* Alto del contenedor ajustable */
+        top: 50%; /* Mueve el contenedor hacia el 50% de la altura del elemento padre */
+        left: 50%; /* Mueve el contenedor hacia el 50% del ancho del elemento padre */
+        transform: translate(-50%, -50%); /* Centra el contenedor horizontal y verticalmente */
+        margin-top: 140px;
+    }
+    
+    main .main_mobile .imagen {
+        position: absolute;
+        top: 0;
+        left: -20px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+        border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -ms-border-radius: 10px ;
+        -o-border-radius: 10px ;
+    }
+    
+    main .main_mobile .imagen img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+    
+    main .main_mobile .borde {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        width: 175px;
+        height: 210px;
+        border: 8px solid #5cc3e7;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        box-shadow: 0 0 20px rgba(92, 195, 231, 0.5); 
+    }
+    
+    main .main_mobile .contenido .p-contenido {
+        color: #999696;
+        margin-top: -60px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 12px;
+        font-weight: bold; 
+    }
+    
+    
+    main .main_mobile .contenido .subtitulo-contenido {
+        margin-top: 0; 
+        color: white;
+        margin-top: 20px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 15px;
+    }
+    
+    main .main_mobile .contenido .p-estudios {
+        margin-top: 0; 
+        color: #999696;
+        margin-top: 10px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 12px;
+        font-weight: bold; 
+    }
+    
+    main .main_mobile .contenido_portafolio {
+        position: relative;
+        margin-top: 10px;
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+    
+    main .main_mobile .contenido_portafolio .titulo-portafolio {
+        color: white;
+        margin-top: 40px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 20px;
+        text-align: center;
+        text-shadow: 4px 4px 6px rgba(92, 195, 231, 0.5); 
+    }
+    
+    /* Estilos de la app 1 */
+    
+    main .main_mobile #contenido_app {
+        display: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    main .main_mobile #name_app_1 {
+        color: white;
+        margin-top: 10px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 18px;
+    }
+
+    main .main_mobile .contenedor_app_1 {
+        position: relative;
+        width: 300px; /* Ancho del contenedor ajustable */
+        height: 200px; /* Alto del contenedor ajustable */
+        top: 50%; /* Mueve el contenedor hacia el 50% de la altura del elemento padre */
+        left: 50%; /* Mueve el contenedor hacia el 50% del ancho del elemento padre */
+        transform: translate(-50%, -50%); /* Centra el contenedor horizontal y verticalmente */
+        margin-top: 120px;
+    }
+    
+    main .main_mobile .imagen_app_1 {
+        position: absolute;
+        top: 0;
+        left: 30px;
+        width: 220px;
+        height: 150px;
+        overflow: hidden;
+        z-index: 1;
+        border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -ms-border-radius: 10px ;
+        -o-border-radius: 10px ;
+    }
+    
+    main .main_mobile .imagen_app_1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+    
+    main .main_mobile .borde_app_1 {
+        position: absolute;
+        top: 30px;
+        left: 60px;
+        width: 205px;
+        height: 140px;
+        border: 8px solid #5cc3e7;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        box-shadow: 0 0 20px rgba(92, 195, 231, 0.5); 
+    }
+
+    .contenido_texto_class {
+        max-width: 500px;
+        text-align: left;
+        margin-top: -90px; 
+    }
+
+    main .main_mobile #info_app_1 {
+        margin-top: 10px;
+        color: #999696;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    main .main_mobile #ver_mas_app_1 {
+        margin-top: 10px;
+        color: white;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 12px;
+        text-decoration: dotted;
+    }
+
+    /* Estilos de la web 1 */
+    
+    main .main_mobile #contenido_web {
+        display: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    main .main_mobile #name_web_1 {
+        color: white;
+        margin-top: 10px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 18px;
+    }
+
+    main .main_mobile .contenedor_web_1 {
+        position: relative;
+        width: 300px; /* Ancho del contenedor ajustable */
+        height: 200px; /* Alto del contenedor ajustable */
+        top: 50%; /* Mueve el contenedor hacia el 50% de la altura del elemento padre */
+        left: 50%; /* Mueve el contenedor hacia el 50% del ancho del elemento padre */
+        transform: translate(-50%, -50%); /* Centra el contenedor horizontal y verticalmente */
+        margin-top: 120px;
+    }
+    
+    main .main_mobile .imagen_web_1 {
+        position: absolute;
+        top: 0;
+        left: 30px;
+        width: 220px;
+        height: 150px;
+        overflow: hidden;
+        z-index: 1;
+        border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -ms-border-radius: 10px ;
+        -o-border-radius: 10px ;
+    }
+    
+    main .main_mobile .imagen_web_1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+    
+    main .main_mobile .borde_web_1 {
+        position: absolute;
+        top: 30px;
+        left: 60px;
+        width: 205px;
+        height: 140px;
+        border: 8px solid #5cc3e7;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        box-shadow: 0 0 20px rgba(92, 195, 231, 0.5); 
+    }
+
+    .contenido_texto_class_web {
+        max-width: 500px;
+        text-align: left;
+        margin-top: -90px; 
+    }
+
+    main .main_mobile #info_web_1 {
+        margin-top: 10px;
+        color: #999696;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    main .main_mobile #ver_mas_web_1 {
+        margin-top: 10px;
+        color: white;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 12px;
+        text-decoration: dotted;
+    }
+
+    /* Estilos de desktop 1 */
+    
+    main .main_mobile #contenido_desktop {
+        display: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    main .main_mobile #name_desktop_1 {
+        color: white;
+        margin-top: 10px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 18px;
+    }
+
+    main .main_mobile .contenedor_desktop_1 {
+        position: relative;
+        width: 300px; /* Ancho del contenedor ajustable */
+        height: 200px; /* Alto del contenedor ajustable */
+        top: 50%; /* Mueve el contenedor hacia el 50% de la altura del elemento padre */
+        left: 50%; /* Mueve el contenedor hacia el 50% del ancho del elemento padre */
+        transform: translate(-50%, -50%); /* Centra el contenedor horizontal y verticalmente */
+        margin-top: 120px;
+    }
+    
+    main .main_mobile .imagen_desktop_1 {
+        position: absolute;
+        top: 0;
+        left: 30px;
+        width: 220px;
+        height: 150px;
+        overflow: hidden;
+        z-index: 1;
+        border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -ms-border-radius: 10px ;
+        -o-border-radius: 10px ;
+    }
+    
+    main .main_mobile .imagen_desktop_1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+    
+    main .main_mobile .borde_desktop_1 {
+        position: absolute;
+        top: 30px;
+        left: 60px;
+        width: 205px;
+        height: 140px;
+        border: 8px solid #5cc3e7;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        box-shadow: 0 0 20px rgba(92, 195, 231, 0.5); 
+    }
+
+    .contenido_texto_class_desktop {
+        max-width: 500px;
+        text-align: left;
+        margin-top: -90px; 
+    }
+
+    main .main_mobile #info_desktop_1 {
+        margin-top: 10px;
+        color: #999696;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    main .main_mobile #ver_mas_desktop_1 {
+        margin-top: 10px;
+        color: white;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 12px;
+        text-decoration: dotted;
+    }
+
+    /* Estilos de otros 1 */
+    
+    main .main_mobile #contenido_otros {
+        display: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    main .main_mobile #name_otros_1 {
+        color: white;
+        margin-top: 10px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 18px;
+    }
+
+    main .main_mobile .contenedor_otros_1 {
+        position: relative;
+        width: 300px; /* Ancho del contenedor ajustable */
+        height: 200px; /* Alto del contenedor ajustable */
+        top: 50%; /* Mueve el contenedor hacia el 50% de la altura del elemento padre */
+        left: 50%; /* Mueve el contenedor hacia el 50% del ancho del elemento padre */
+        transform: translate(-50%, -50%); /* Centra el contenedor horizontal y verticalmente */
+        margin-top: 120px;
+    }
+    
+    main .main_mobile .imagen_otros_1 {
+        position: absolute;
+        top: 0;
+        left: 30px;
+        width: 220px;
+        height: 150px;
+        overflow: hidden;
+        z-index: 1;
+        border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -ms-border-radius: 10px ;
+        -o-border-radius: 10px ;
+    }
+    
+    main .main_mobile .imagen_otros_1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+    
+    main .main_mobile .borde_otros_1 {
+        position: absolute;
+        top: 30px;
+        left: 60px;
+        width: 205px;
+        height: 140px;
+        border: 8px solid #5cc3e7;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        box-shadow: 0 0 20px rgba(92, 195, 231, 0.5); 
+    }
+
+    main .main_mobile .contenido_texto_class_otros {
+        max-width: 500px;
+        text-align: left;
+        margin-top: -90px; 
+    }
+
+    main .main_mobile #info_otros_1 {
+        margin-top: 10px;
+        color: #999696;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    main .main_mobile #ver_mas_otros_1 {
+        margin-top: 10px;
+        color: white;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 12px;
+        text-decoration: dotted;
+    }
+
+    /* CONTENIDO DE EXPERIENCIA */
+
+    main .main_mobile .contenido_experiencia {
+        position: relative;
+        margin-top: 20px;
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+
+    main .main_mobile .contenido_experiencia .titulo-experiencia {
+        color: white;
+        margin-top: 40px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 20px;
+        text-align: center;
+        text-shadow: 4px 4px 6px rgba(92, 195, 231, 0.5); /* Ajusta los valores según tus preferencias */
+    }
+
+    main .main_mobile #contenido_experiencia {
+        display: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .main_mobile .contenido_texto_class_expe {
+        width: 100%;
+        text-align: left; 
+    }
+
+    main .main_mobile #info_experiencia {
+        margin-top: 30px;
+        color: #999696;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    main .main_mobile .contenedor_experiencia {
+        display: block; 
+        align-items: center;
+    }
+
+    main .main_mobile .container_tecno {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+
+    main .main_mobile .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    main .main_mobile .column {
+        text-align: center;
+    }
+
+
+    main .main_mobile .column img {
+        width: 40px;
+        height: 40px;
+        padding: 24px;
+        margin-bottom: 0px;
+    }
+
+    main .main_mobile .column p {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        margin-top: -10px;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    main .main_mobile #Titulo_contacto {
+        color: white;
+        margin-top: 10px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 80px;
+        text-shadow: 4px 4px 6px rgba(92, 195, 231, 0.5); /* Ajusta los valores según tus preferencias */
+    }
+    
+    main .main_mobile #contenido_contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: -50px;
+    }
+    
+    main .main_mobile .contenedor_contacto {
+        display: absolute; 
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    main .main_mobile .fila {
+        background-color: #101630;
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Espacio entre imagen y enlace */
+        z-index: 2; /* Ajusta el z-index para estar por encima del borde */
+        position: relative; /* Agrega posición relativa */
+        padding: 10px; /* Espaciado interno para que la sombra se note */
+        box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    
+    main .main_mobile .fila img {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+}
+    
+    main .main_mobile .fila a {
+        padding-right: 10px; /* Ajusta el espaciado interno de los enlaces */
+        color: white;
+        text-decoration: none;
+        font-size: 11px;
+        font-family: 'Roboto Mono', monospace;
+    }
+    
+    main .main_mobile .contenedor_contacto_cards {
+        position: relative;
+    }
+    
+    main .main_mobile .borde_contacto_linkedin {
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        width: 300px;
+        height: 230px;
+        border: 8px solid #5cc3e7;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        box-shadow: 0 0 20px rgba(92, 195, 231, 0.5);
+        z-index: 1;
+    }
+    
+    footer {
+        color: #fff;
+        text-align: center;
+        padding-bottom: 40px;
+        margin-top: 100px;
+    }
+
+
+    
+    
+    footer .contenido-footer-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer .contenido-footer-mobile h2 {
+        margin: 0;
+        font-size: 15px;
+        color: #999696;
+        font-family: 'Roboto Mono', monospace;
+    }
+    
+
+    
+
+}
