@@ -287,13 +287,27 @@ main .main_desktop #info_app_1 {
     font-weight: bold;
 }
 
-main .main_desktop #ver_mas_app_1 {
-    margin-top: 10px;
+main .main_desktop .ver_app_1 {
+    display: flex;
+    align-items: center;
+}
+
+main .main_desktop .ver_app_1 > h4 {
+    margin-right: 10px; /* Espacio entre el texto y la imagen */
+}
+
+main .main_desktop .ver_app_1 #ver_mas_app_1 {
     color: white;
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
     text-decoration: dotted;
 }
+
+main .main_desktop .ver_app_1 img {
+    margin-top: 10px;
+    width: 40px;
+}
+
 
 main .main_desktop .contenido_texto_class {
     max-width: 500px;
@@ -303,6 +317,7 @@ main .main_desktop .contenido_texto_class {
 main .main_desktop .contenedor_app {
     display: flex; 
     align-items: center;
+    margin-top: -50px;
 }
 
 main .main_desktop .contenedor_app_1 {
@@ -350,101 +365,6 @@ main .main_desktop .borde_app_1 {
 
 /* Estilos de la web 1 */
 
-main .main_desktop #contenido_web {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-}
-
-main .main_desktop #proyecto_web_1 {
-    margin-top: 0;
-    color: #5cc3e7;
-    margin-top: 20px;
-    font-family: 'Chonburi', cursive;
-    font-size: 25px;
-    font-weight: normal;
-}
-
-main .main_desktop #name_web_1 {
-    margin-top: 0;
-    color: white;
-    margin-top: 10px;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 25px;
-}
-
-main .main_desktop #info_web_1 {
-    margin-top: 10px;
-    color: #999696;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-main .main_desktop #ver_mas_web_1 {
-    margin-top: 10px;
-    color: white;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 15px;
-    text-decoration: dotted;
-}
-
-main .main_desktop .contenido_texto_class {
-    max-width: 500px;
-    text-align: left; 
-}
-
-main .main_desktop .contenedor_web {
-    display: flex; 
-    align-items: center;
-}
-
-main .main_desktop .contenedor_web_1 {
-    position: relative;
-    width: 350px;
-    height: 200px;
-    margin-left: 50px;
-}
-
-main .main_desktop .imagen_web_1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
-    z-index: 1;
-    border-radius: 10px ;
-    -webkit-border-radius: 10px ;
-    -moz-border-radius: 10px ;
-    -ms-border-radius: 10px ;
-    -o-border-radius: 10px ;
-}
-
-main .main_desktop .imagen_web_1 img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover; 
-}
-
-main .main_desktop .borde_web_1 {
-    position: absolute;
-    top: 30px;
-    left: 40px;
-    width: 280px;
-    height: 190px;
-    border: 8px solid #5cc3e7;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    box-shadow: 0 0 20px rgba(92, 195, 231, 0.5); 
-}
-
-/* Estilos de desktop 1 */
-
 main .main_desktop #contenido_desktop {
     display: flex;
     justify-content: center;
@@ -483,6 +403,27 @@ main .main_desktop #ver_mas_desktop_1 {
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
     text-decoration: dotted;
+}
+
+main .main_desktop .ver_desktop_1 {
+    display: flex;
+    align-items: center;
+}
+
+main .main_desktop .ver_desktop_1 > h4 {
+    margin-right: 10px; /* Espacio entre el texto y la imagen */
+}
+
+main .main_desktop .ver_desktop_1 #ver_mas_app_1 {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    text-decoration: dotted;
+}
+
+main .main_desktop .ver_desktop_1 img {
+    margin-top: 20px;
+    width: 40px;
 }
 
 main .main_desktop .contenido_texto_class {
@@ -538,100 +479,7 @@ main .main_desktop .borde_desktop_1 {
     box-shadow: 0 0 20px rgba(92, 195, 231, 0.5); 
 }
 
-/* Estilos de la otros proyectos 1 */
 
-main .main_desktop #contenido_otros {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-}
-
-main .main_desktop #proyecto_otros_1 {
-    margin-top: 0;
-    color: #5cc3e7;
-    margin-top: 20px;
-    font-family: 'Chonburi', cursive;
-    font-size: 25px;
-    font-weight: normal;
-}
-
-main .main_desktop #name_otros_1 {
-    margin-top: 0;
-    color: white;
-    margin-top: 10px;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 25px;
-}
-
-main .main_desktop #info_otros_1 {
-    margin-top: 10px;
-    color: #999696;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-main .main_desktop #ver_mas_otros_1 {
-    margin-top: 10px;
-    color: white;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 15px;
-    text-decoration: dotted;
-}
-
-main .main_desktop .contenido_texto_class {
-    max-width: 500px;
-    text-align: left; 
-}
-
-main .main_desktop .contenedor_otros {
-    display: flex; 
-    align-items: center;
-}
-
-main .main_desktop .contenedor_otros_1 {
-    position: relative;
-    width: 350px;
-    height: 200px;
-    margin-left: 50px;
-}
-
-main .main_desktop .imagen_otros_1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
-    z-index: 1;
-    border-radius: 10px ;
-    -webkit-border-radius: 10px ;
-    -moz-border-radius: 10px ;
-    -ms-border-radius: 10px ;
-    -o-border-radius: 10px ;
-}
-
-main .main_desktop .imagen_otros_1 img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover; 
-}
-
-main .main_desktop .borde_otros_1 {
-    position: absolute;
-    top: 30px;
-    left: 40px;
-    width: 280px;
-    height: 190px;
-    border: 8px solid #5cc3e7;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    box-shadow: 0 0 20px rgba(92, 195, 231, 0.5); 
-}
 
 /* CONTENIDO DE EXPERIENCIA */
 
@@ -825,8 +673,6 @@ main .main_desktop .borde_contacto_correo {
     z-index: 1;
 }
 
-
-
 /* FOOTER */
 
 footer {
@@ -844,6 +690,7 @@ footer.contenido-footer {
 }
 
 /* Estilos para el texto de derechos de autor */
+
 h2 {
     margin: 0;
     font-size: 18px;
@@ -1154,99 +1001,29 @@ footer .footer-mobile {
         font-weight: bold;
     }
     
-    main .main_mobile #ver_mas_app_1 {
-        margin-top: 10px;
-        color: white;
-        font-family: 'Roboto Mono', monospace;
-        font-size: 12px;
-        text-decoration: dotted;
-    }
-
-    /* Estilos de la web 1 */
-    
-    main .main_mobile #contenido_web {
-        display: absolute;
-        justify-content: center;
+    main .main_mobile .ver_app_1 {
+        display: flex;
         align-items: center;
-        margin-top: 60px;
-    }
-
-    main .main_mobile #name_web_1 {
-        color: white;
-        margin-top: 10px;
-        font-family: 'Roboto Mono', monospace;
-        font-size: 18px;
-    }
-
-    main .main_mobile .contenedor_web_1 {
-        position: relative;
-        width: 300px; /* Ancho del contenedor ajustable */
-        height: 200px; /* Alto del contenedor ajustable */
-        top: 50%; /* Mueve el contenedor hacia el 50% de la altura del elemento padre */
-        left: 50%; /* Mueve el contenedor hacia el 50% del ancho del elemento padre */
-        transform: translate(-50%, -50%); /* Centra el contenedor horizontal y verticalmente */
-        margin-top: 120px;
+        margin-top: 5px;
     }
     
-    main .main_mobile .imagen_web_1 {
-        position: absolute;
-        top: 0;
-        left: 30px;
-        width: 220px;
-        height: 150px;
-        overflow: hidden;
-        z-index: 1;
-        border-radius: 10px ;
-        -webkit-border-radius: 10px ;
-        -moz-border-radius: 10px ;
-        -ms-border-radius: 10px ;
-        -o-border-radius: 10px ;
+    main .main_mobile .ver_app_1 > h4 {
+        margin-right: 10px; /* Espacio entre el texto y la imagen */
     }
     
-    main .main_mobile .imagen_web_1 img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; 
-    }
-    
-    main .main_mobile .borde_web_1 {
-        position: absolute;
-        top: 30px;
-        left: 60px;
-        width: 205px;
-        height: 140px;
-        border: 8px solid #5cc3e7;
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-        box-shadow: 0 0 20px rgba(92, 195, 231, 0.5); 
-    }
-
-    .contenido_texto_class_web {
-        max-width: 500px;
-        text-align: left;
-        margin-top: -90px; 
-    }
-
-    main .main_mobile #info_web_1 {
-        margin-top: 10px;
-        color: #999696;
-        font-family: 'Roboto Mono', monospace;
-        font-size: 12px;
-        font-weight: bold;
-    }
-    
-    main .main_mobile #ver_mas_web_1 {
-        margin-top: 10px;
+    main .main_mobile .ver_app_1 #ver_mas_app_1 {
         color: white;
         font-family: 'Roboto Mono', monospace;
         font-size: 12px;
         text-decoration: dotted;
     }
+    
+    main .main_mobile .ver_app_1 img {
+        margin-top: 10px;
+        width: 30px;
+    }
 
-    /* Estilos de desktop 1 */
+    /* Estilos de la desktop 1 */
     
     main .main_mobile #contenido_desktop {
         display: absolute;
@@ -1322,97 +1099,28 @@ footer .footer-mobile {
         font-weight: bold;
     }
     
-    main .main_mobile #ver_mas_desktop_1 {
-        margin-top: 10px;
-        color: white;
-        font-family: 'Roboto Mono', monospace;
-        font-size: 12px;
-        text-decoration: dotted;
-    }
-
-    /* Estilos de otros 1 */
-    
-    main .main_mobile #contenido_otros {
-        display: absolute;
-        justify-content: center;
+    main .main_mobile .ver_desktop_1 {
+        display: flex;
         align-items: center;
-        margin-top: 60px;
-    }
-
-    main .main_mobile #name_otros_1 {
-        color: white;
-        margin-top: 10px;
-        font-family: 'Roboto Mono', monospace;
-        font-size: 18px;
-    }
-
-    main .main_mobile .contenedor_otros_1 {
-        position: relative;
-        width: 300px; /* Ancho del contenedor ajustable */
-        height: 200px; /* Alto del contenedor ajustable */
-        top: 50%; /* Mueve el contenedor hacia el 50% de la altura del elemento padre */
-        left: 50%; /* Mueve el contenedor hacia el 50% del ancho del elemento padre */
-        transform: translate(-50%, -50%); /* Centra el contenedor horizontal y verticalmente */
-        margin-top: 120px;
+        margin-top: 5px;
     }
     
-    main .main_mobile .imagen_otros_1 {
-        position: absolute;
-        top: 0;
-        left: 30px;
-        width: 220px;
-        height: 150px;
-        overflow: hidden;
-        z-index: 1;
-        border-radius: 10px ;
-        -webkit-border-radius: 10px ;
-        -moz-border-radius: 10px ;
-        -ms-border-radius: 10px ;
-        -o-border-radius: 10px ;
+    main .main_mobile .ver_desktop_1 h4 {
+        margin-right: 10px; /* Espacio entre el texto y la imagen */
     }
     
-    main .main_mobile .imagen_otros_1 img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; 
-    }
-    
-    main .main_mobile .borde_otros_1 {
-        position: absolute;
-        top: 30px;
-        left: 60px;
-        width: 205px;
-        height: 140px;
-        border: 8px solid #5cc3e7;
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-        box-shadow: 0 0 20px rgba(92, 195, 231, 0.5); 
-    }
-
-    main .main_mobile .contenido_texto_class_otros {
-        max-width: 500px;
-        text-align: left;
-        margin-top: -90px; 
-    }
-
-    main .main_mobile #info_otros_1 {
-        margin-top: 10px;
-        color: #999696;
-        font-family: 'Roboto Mono', monospace;
-        font-size: 12px;
-        font-weight: bold;
-    }
-    
-    main .main_mobile #ver_mas_otros_1 {
-        margin-top: 10px;
+    main .main_mobile .ver_desktop_1 #ver_mas_desktop_1 {
         color: white;
         font-family: 'Roboto Mono', monospace;
         font-size: 12px;
         text-decoration: dotted;
     }
+    
+    main .main_mobile .ver_desktop_1 img {
+        margin-top: 8px;
+        width: 30px;
+    }
+
 
     /* CONTENIDO DE EXPERIENCIA */
 

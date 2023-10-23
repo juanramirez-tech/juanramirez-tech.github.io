@@ -192,7 +192,7 @@ function scrollToSection_3_mobile(event) {
     var posicion = destino.offsetTop;
 
     // Ajusta la posición para agregar espacio superior
-    var espacioSuperior = 2700; // Ajusta según tu barra de navegación
+    var espacioSuperior = 2000; // Ajusta según tu barra de navegación
     posicion += espacioSuperior;
 
     // Desplaza la página a la posición
