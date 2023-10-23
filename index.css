@@ -434,6 +434,7 @@ main .main_desktop .contenido_texto_class {
 main .main_desktop .contenedor_desktop {
     display: flex; 
     align-items: center;
+    margin-top: -20PX;
 }
 
 main .main_desktop .contenedor_desktop_1 {

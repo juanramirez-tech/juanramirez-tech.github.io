@@ -59,7 +59,7 @@ function scrollToSection_3(event) {
     var posicion = destino.offsetTop;
 
     // Ajusta la posición para agregar espacio superior
-    var espacioSuperior = 2090; // Ajusta según tu barra de navegación
+    var espacioSuperior = 1700; // Ajusta según tu barra de navegación
     posicion += espacioSuperior;
 
     // Desplaza la página a la posición
@@ -77,7 +77,7 @@ function scrollToSection_4(event) {
     var posicion = destino.offsetTop;
 
     // Ajusta la posición para agregar espacio superior
-    var espacioSuperior = 3500; // Ajusta según tu barra de navegación
+    var espacioSuperior = 3000; // Ajusta según tu barra de navegación
     posicion += espacioSuperior;
 
     // Desplaza la página a la posición
@@ -162,7 +162,6 @@ function scrollToSection_1_mobile() {
         top: posicion,
         behavior: 'smooth' // Desplazamiento suave
     });
-
 
 }
 
